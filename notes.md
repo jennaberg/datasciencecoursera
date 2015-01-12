@@ -1,4 +1,41 @@
 #notes from class
+## week one
+
+this week i set up github account and installed the various software (git, R, Rstudio)
+
+here i also learned how to make and connect repositories flipping back through my terminal commands i think the following sequence of commands will do what i want
+
+* start by making the directories (one local and one on github) that you want to have connected
+
+> click through and initialize with README.md on github
+
+> mkdir [repo name]
+
+* then move into the directory locally and initialize and connect to remote repo
+
+> cd [repo name]
+>  git init 
+> git remote add origin [https link for github repo]
+
+
+(ok i'm going to try that sequence now to see if it works) 
+
+(that totally didn't work)
+
+#way to connect local repo to github repo.
+
+* make repo on git hub
+* in directory one up from where you want your repo use command
+> git clone [url of github repo]
+
+i think that may be it - again i'm gong to try it to see if i need to do any init or remote stupid locally
+
+this (above) works
+
+
+
+
+
 ##week two
 
 * commands
