@@ -88,7 +88,96 @@ i can then synch the changes made locally to the copy of the repo on git hub usi
 
 (within the directory synched with the remote repo - and i'm pretty sure this will only work if i've synched the two correctly which is the process by which the two systems know the meaning of the arguments origin and master) [i want to add that sequence of commands to these notes later - possibly the week one notes]
 
+#Adding : seems like git add -A adds all files and updates tracking for files that were changed
+
+after adding you can commit them locally
+
+git commit -m "useful description of changes in this commit - may refer to changes in lots of files"
+
+to put up on github 
+
+git push (within the directory you want to update)
+
+#Branching
+
+*create a new branch using command git checkout -b NAMEof branch you want to do 
+
+( i don't know if this means create the name of new branch or if it takes as an input the thing you are branching) 
+
+
+* git branch tells you which branch you are on (traditional is master)
+
+*git checkout master will return you to the master branch
+
+#Pull requests
+
+(follow instructions on Github - this is a githuib, not command line operation) 
+
+# git/github help
+
+*http://git-smc.com/doc
+
+*https://help.github.com
+
+* google or stack overflow 
+
 * Github is a web based platform to store and share repositories 
 
 you can change files in either and then use push or pull commands to update the two versions of the repo: push goes from local to remote, pull i haven't used yet.
 
+
+## week 3 (conceptual issues) 
+
+#types of questions
+
+* descriptive, exploratory, inferential, predictive, causal, mechanistic
+
+* descriptive: just say what is there separate from inferring 
+
+* exploratory: trying to find relationships (not necessarily confirm them) good for forming questions (find correlations - not causations)
+
+* inferential: use a small amount of data and make a statement about a bigger population. involves estimation and level of uncertainty
+
+*prediction analysis: use data on some objects to predict values on next object that you encounter (note prediction is not the same as causation)  (more data and a simple model is better) 
+
+* causal analysis: this is very hard.  requires a randomized studies (control trials) 
+
+*mechanistic: rarely the goal. want to understand exact changes in one variable that lead to changes in another variable (better in physical.engineering studies) 
+
+
+# what is data
+
+* data are values of qualitative or quantitative variables belonging to a set of items
+
+** set of items : population
+**variables: characteristic of  an item
+**qualitative: not neck ordered or measured
+** quant: usually numeric definitely order able
+
+*what do data look like?: yuky - usually very poorly structured - not the pretty excel file that you are thinking of.
+
+*first important item is question - then the data. (this is important) 
+
+# what about big data
+
+*depends on your perspective. we can collect much more data now, than we could 40 years ago (chain letter analogy) 
+
+*big data isn't the issue - it is wether it is useful.
+
+
+#experimental design 
+
+* make a good plan (including the statistical method you want to use), 
+*have a plan for sharing your data
+*START WITH A QUESTION
+*example of inferential statistics (using the text change donation study) 
+*issue of confounding variable (shoe size and literacy example) 
+* fix confounding: fix some variables, stratify (separate out data when variable isn't fixed), randomize variables that aren't fixable (explains why randomization helps) 
+* prediction: terms (connecting probabilities and the quadrant of possibilities in prediction)
+** sensitivity probability that if you have a positive test, given that you have the disease
+**specificity: probability that you have a neg test, given that you don't have the disease
+**pos predictive value: probability that you have the disease,, given that you have a positive test
+**negative predictive value: probability that you don't have the disease if you have a negative test
+**accuracy: probability of correct outcome
+*(dude does a summary that is not what he talked about in video - odd)
+**good experiments are:replicable, measure variability in replication, generalize to a problem you care about, are transparent. (note prediction and inference are different things (both important)
